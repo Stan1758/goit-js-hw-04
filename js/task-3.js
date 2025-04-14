@@ -2,13 +2,13 @@ const profile = {
     username: "Jacob",
     playTime: 300,
     getInfo: function getInfo() {
-             return `${profile.username} has ${profile.playTime} active hours!`;
+             return `${this.username} has ${this.playTime} active hours!`;
              },
     changeUsername: function changeUsername(newName) {
-                    profile.username = newName;
+                    this.username = newName;
                     },
     updatePlayTime: function updatePlayTime(hours) {
-                    profile.playTime += hours;
+                    this.playTime += hours;
                     },
 };
 
